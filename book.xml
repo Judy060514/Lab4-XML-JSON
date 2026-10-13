@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element: only one allowed in XML -->
 <bookstore>
+    <!-- Each book needs a unique id attribute -->
     <book id="B001">
-        <title>XML入门经典</title>
-        <author>张三</author>
+        <title>Introduction to XML</title>
+        <author>Alice Zhang</author>
         <price>45.00</price>
     </book>
     <book id="B002">
-        <title>JavaScript高级程序设计</title>
-        <author>李四</author>
+        <title>Advanced JavaScript Programming</title>
+        <author>Bob Li</author>
         <price>89.50</price>
     </book>
     <book id="B003">
-        <title>计算机网络</title>
-        <author>王五</author>
+        <title>Computer Networks</title>
+        <author>Carol Wang</author>
         <price>66.00</price>
     </book>
 </bookstore>

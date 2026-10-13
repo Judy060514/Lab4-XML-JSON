@@ -1,14 +1,20 @@
+// Step 1: grab the JSON file
 fetch('userProfiles.json')
     .then(response => {
+        // Always check response.ok before parsing
         if (!response.ok) throw new Error('Fetch error: ' + response.status);
+        // .json() automatically parses the response body
         return response.json();
     })
     .then(json => {
         const container = document.getElementById('profileContainer');
 
+        // forEach is cleaner than a for loop for arrays
         json.userProfiles.forEach(user => {
             const card = document.createElement('div');
             card.className = 'profile-card';
+
+            // Nested objects: use dot notation to reach preferences/address
             card.innerHTML =
                 '<h2>' + user.firstName + ' ' + user.lastName + '</h2>' +
                 '<p><span class="label">Email:</span> ' + user.email + '</p>' +
@@ -23,6 +29,7 @@ fetch('userProfiles.json')
                     user.address.state + ' ' +
                     user.address.zipCode +
                 '</p>';
+
             container.appendChild(card);
         });
     })

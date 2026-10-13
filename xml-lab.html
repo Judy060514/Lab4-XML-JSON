@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>XML Lab - Book Catalogue</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
-        h1 { color: #333; text-align: center; }
-        table { width: 80%; margin: 20px auto; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #4CAF50; color: white; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
+        /* Keep the layout simple: one table in the center */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        /* border-collapse removes the double borders between cells */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        /* Green header makes the table easier to read */
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* Zebra stripes for even rows */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
-    <h1>📚 图书目录 (Book Catalogue)</h1>
+    <h1>📚 Book Catalogue</h1>
+
+    <!-- tbody is empty here; JS will fill it after fetching the XML -->
     <table id="bookTable">
         <thead>
-            <tr><th>ID</th><th>Title</th><th>Author</th><th>Price</th></tr>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
         </thead>
         <tbody id="bookBody"></tbody>
     </table>
+
+    <!-- Load the JS at the end so the DOM is ready -->
     <script src="xml-script.js"></script>
 </body>
 </html>

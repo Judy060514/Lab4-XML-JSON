@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>JSON Lab - User Profiles</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f0f4f8; }
-        h1 { color: #2c3e50; text-align: center; }
-        .profile-card { background: white; max-width: 700px; margin: 20px auto; padding: 20px 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .profile-card h2 { color: #4CAF50; margin-top: 0; }
-        .profile-card p { margin: 6px 0; }
-        .label { font-weight: bold; color: #333; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f4f8;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        /* Each user gets its own card, centered with margin auto */
+        .profile-card {
+            background: white;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .profile-card h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .profile-card p {
+            margin: 6px 0;
+        }
+        /* Bold labels so the field names stand out from the values */
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <h1>👤 用户档案 (User Profiles)</h1>
+    <h1>👤 User Profiles</h1>
+
+    <!-- Empty container; JS will append one card per user -->
     <div id="profileContainer"></div>
+
     <script src="json-script.js"></script>
 </body>
 </html>
