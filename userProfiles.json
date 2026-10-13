@@ -1,0 +1,58 @@
+{
+  "userProfiles": [
+    {
+      "firstName": "Alice",
+      "lastName": "Wang",
+      "email": "alice.wang@example.com",
+      "dateOfBirth": "1998-05-12",
+      "preferences": {
+        "theme": "dark",
+        "language": "en",
+        "notifications": true,
+        "subscription": true
+      },
+      "address": {
+        "street": "12 Queen Street",
+        "city": "Palmerston North",
+        "state": "Manawatu",
+        "zipCode": "4410"
+      }
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Li",
+      "email": "bob.li@example.com",
+      "dateOfBirth": "1995-11-03",
+      "preferences": {
+        "theme": "light",
+        "language": "zh",
+        "notifications": false,
+        "subscription": false
+      },
+      "address": {
+        "street": "45 Fitzherbert Ave",
+        "city": "Palmerston North",
+        "state": "Manawatu",
+        "zipCode": "4410"
+      }
+    },
+    {
+      "firstName": "Carol",
+      "lastName": "Chen",
+      "email": "carol.chen@example.com",
+      "dateOfBirth": "2000-02-20",
+      "preferences": {
+        "theme": "dark",
+        "language": "en",
+        "notifications": true,
+        "subscription": true
+      },
+      "address": {
+        "street": "78 Broadway Ave",
+        "city": "Palmerston North",
+        "state": "Manawatu",
+        "zipCode": "4410"
+      }
+    }
+  ]
+}
